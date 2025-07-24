@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dersler</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 id="dersBaslik">Dersler</h1>
+  <ul id="dersListesi"></ul>
+  <p><a href="siniflar.html?bolum=Endüstri%20Mühendisliği">← Geri Dön</a></p>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const bolum = urlParams.get("bolum");
+    const sinif = urlParams.get("sinif");
+
+    const dersBaslik = document.getElementById("dersBaslik");
+    const dersListesi = document.getElementById("dersListesi");
+
+    if (!bolum || !sinif) {
+      dersBaslik.innerText = "HATA: Bölüm veya sınıf bilgisi eksik!";
+    } else {
+      dersBaslik.innerText = `${decodeURIComponent(bolum)} - ${sinif}. Sınıf Dersleri`;
+
+      fetch("data/dersler.json")
+        .then(response => response.json())
+        .then(tumDersler => {
+          let bulundu = false;
+          for (const dersKodu in tumDersler) {
+            const ders = tumDersler[dersKodu];
+            if (ders.bolumler && ders.bolumler[bolum] === sinif) {
+              bulundu = true;
+              const li = document.createElement("li");
+              const link = document.createElement("a");
+              link.href = `ders.html?kod=${dersKodu}`;
+              link.textContent = `${ders.isim} (${dersKodu.toUpperCase()})`;
+              li.appendChild(link);
+              dersListesi.appendChild(li);
+            }
+          }
+          if (!bulundu) {
+            dersListesi.innerHTML = "<li>Bu bölüm ve sınıf için ders bulunamadı.</li>";
+          }
+        })
+        .catch(err => {
+          dersBaslik.innerText = "Ders verileri yüklenirken hata oluştu!";
+          console.error("JSON yükleme hatası:", err);
+        });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sınıf Seçimi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 id="bolumBaslik">Sınıf Seçin</h1>
+  <ul id="sinifListesi"></ul>
+  <p><a href="bolumler.html">← Geri Dön</a></p>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const bolum = urlParams.get("bolum");
+
+    if (!bolum) {
+      document.getElementById("bolumBaslik").innerText = "HATA: Bölüm bilgisi yok!";
+    } else {
+      document.getElementById("bolumBaslik").innerText = bolum + " - Sınıf Seçin";
+
+      const sinifListesi = document.getElementById("sinifListesi");
+      for (let i = 1; i <= 4; i++) {
+        const li = document.createElement("li");
+        const link = document.createElement("a");
+        link.href = `dersler.html?bolum=${encodeURIComponent(bolum)}&sinif=${i}`;
+        link.innerText = i + ". Sınıf";
+        li.appendChild(link);
+        sinifListesi.appendChild(li);
+      }
+    }
+  </script>
+</body>
+</html>

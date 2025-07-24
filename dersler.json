@@ -1,0 +1,230 @@
+{
+  "cs104": {
+    "isim": "Introduction to Programming",
+    "bolumler": {
+      "Endüstri Mühendisliği": "1"
+    }
+  },
+  "eng101": {
+    "isim": "English I",
+    "bolumler": {
+      "Endüstri Mühendisliği": "1"
+    }
+  },
+  "math103": {
+    "isim": "Calculus for Engineering I",
+    "bolumler": {
+      "Endüstri Mühendisliği": "1"
+    }
+  },
+  "phys101": {
+    "isim": "Physics I",
+    "bolumler": {
+      "Endüstri Mühendisliği": "1"
+    }
+  },
+  "tll101": {
+    "isim": "Turkish Language and Literature I",
+    "bolumler": {
+      "Endüstri Mühendisliği": "1"
+    }
+  },
+  "bus101": {
+    "isim": "Introduction to Business I (Decision Making)",
+    "bolumler": {
+      "Endüstri Mühendisliği": "1"
+    }
+  },
+  "eng102": {
+    "isim": "English II",
+    "bolumler": {
+      "Endüstri Mühendisliği": "1"
+    }
+  },
+  "ie101": {
+    "isim": "Introduction to Industrial Engineering",
+    "bolumler": {
+      "Endüstri Mühendisliği": "1"
+    }
+  },
+  "math104": {
+    "isim": "Calculus for Engineering II",
+    "bolumler": {
+      "Endüstri Mühendisliği": "1"
+    }
+  },
+  "phys102": {
+    "isim": "Physics II",
+    "bolumler": {
+      "Endüstri Mühendisliği": "1"
+    }
+  },
+  "sec101": {
+    "isim": "Introduction to University",
+    "bolumler": {
+      "Endüstri Mühendisliği": "1"
+    }
+  },
+  "econ210": {
+    "isim": "Introduction to Economics",
+    "bolumler": {
+      "Endüstri Mühendisliği": "2"
+    }
+  },
+  "math112": {
+    "isim": "Discrete Mathematics",
+    "bolumler": {
+      "Endüstri Mühendisliği": "2"
+    }
+  },
+  "math211": {
+    "isim": "Linear Algebra",
+    "bolumler": {
+      "Endüstri Mühendisliği": "2"
+    }
+  },
+  "math215": {
+    "isim": "Probability and Random Variables",
+    "bolumler": {
+      "Endüstri Mühendisliği": "2"
+    }
+  },
+  "sec201": {
+    "isim": "Introduction to Sectors",
+    "bolumler": {
+      "Endüstri Mühendisliği": "2"
+    }
+  },
+  "tll102": {
+    "isim": "Turkish Language and Literature II",
+    "bolumler": {
+      "Endüstri Mühendisliği": "2"
+    }
+  },
+  "hist201": {
+    "isim": "Principles of Ataturk and History of the Turkish Republic I",
+    "bolumler": {
+      "Endüstri Mühendisliği": "2"
+    }
+  },
+  "ie201": {
+    "isim": "Operations Research I",
+    "bolumler": {
+      "Endüstri Mühendisliği": "2"
+    }
+  },
+  "ie246": {
+    "isim": "Programming for Operations Research",
+    "bolumler": {
+      "Endüstri Mühendisliği": "2"
+    }
+  },
+  "math212": {
+    "isim": "Differential Equations",
+    "bolumler": {
+      "Endüstri Mühendisliği": "2"
+    }
+  },
+  "math216": {
+    "isim": "Applied Statistics",
+    "bolumler": {
+      "Endüstri Mühendisliği": "2"
+    }
+  },
+  "sec202": {
+    "isim": "Responsible Citizenship and Impact",
+    "bolumler": {
+      "Endüstri Mühendisliği": "2"
+    }
+  },
+  "eng303": {
+    "isim": "Technical Communication",
+    "bolumler": {
+      "Endüstri Mühendisliği": "3"
+    }
+  },
+  "ie203": {
+    "isim": "Engineering Economy",
+    "bolumler": {
+      "Endüstri Mühendisliği": "3"
+    }
+  },
+  "ie301": {
+    "isim": "Operations Research II",
+    "bolumler": {
+      "Endüstri Mühendisliği": "3"
+    }
+  },
+  "ie302": {
+    "isim": "Production Systems Analysis",
+    "bolumler": {
+      "Endüstri Mühendisliği": "3"
+    }
+  },
+  "ie342": {
+    "isim": "Mathematical Modelling and Exact Methods",
+    "bolumler": {
+      "Endüstri Mühendisliği": "3"
+    }
+  },
+  "nan": {
+    "isim": "FE Free Elective",
+    "bolumler": {
+      "Endüstri Mühendisliği": "4"
+    }
+  },
+  "fe101": {
+    "isim": "Being an Engineer",
+    "bolumler": {
+      "Endüstri Mühendisliği": "3"
+    }
+  },
+  "hist202": {
+    "isim": "Principles of Ataturk and History of the Turkish Republic II",
+    "bolumler": {
+      "Endüstri Mühendisliği": "3"
+    }
+  },
+  "ie300": {
+    "isim": "Internship I",
+    "bolumler": {
+      "Endüstri Mühendisliği": "3"
+    }
+  },
+  "ie325": {
+    "isim": "Simulation Modelling and Analysis",
+    "bolumler": {
+      "Endüstri Mühendisliği": "3"
+    }
+  },
+  "ie343": {
+    "isim": "Mathematical Modelling and Heuristic Methods",
+    "bolumler": {
+      "Endüstri Mühendisliği": "3"
+    }
+  },
+  "bus102": {
+    "isim": "Introduction to Business II (Entrepreneurship)",
+    "bolumler": {
+      "Endüstri Mühendisliği": "4"
+    }
+  },
+  "ie400": {
+    "isim": "Internship II",
+    "bolumler": {
+      "Endüstri Mühendisliği": "4"
+    }
+  },
+  "ie401": {
+    "isim": "IE Senior Project I",
+    "bolumler": {
+      "Endüstri Mühendisliği": "4"
+    }
+  },
+  "ie402": {
+    "isim": "IE Senior Project II",
+    "bolumler": {
+      "Endüstri Mühendisliği": "4"
+    }
+  }
+}

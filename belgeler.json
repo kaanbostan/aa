@@ -1,0 +1,34 @@
+{
+  "CS104": [
+    {
+      "isim": "Deneme1",
+      "dosya": "cs104/deneme1.py"
+    }
+  ],
+  "IE302": [],
+  "MATH101": [],
+  "MATH104": [
+    {
+      "isim": "Görsel",
+      "dosya": "math104/görsel.png"
+    }
+  ],
+  "MATH216": [
+    {
+      "isim": "Konular",
+      "dosya": "math216/konular.txt"
+    }
+  ],
+  "SEC101": [
+    {
+      "isim": "Sylabuss",
+      "dosya": "sec101/sylabuss.pdf"
+    }
+  ],
+  "TLL101": [
+    {
+      "isim": "Resim",
+      "dosya": "tll101/resim.png"
+    }
+  ]
+}

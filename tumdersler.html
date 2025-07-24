@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Tüm Dersler - ÖzÜ Ders Arşivi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>📄 Tüm Dersler (Alfabetik)</h1>
+  <ul id="tumDersler"></ul>
+
+  <p><a href="index.html">⬅️ Ana Sayfa</a></p>
+
+  <script>
+    fetch("data/tum_dersler.json")
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById("tumDersler");
+
+        // Dersleri alfabetik sıraya göre sıralıyoruz
+        const sirali = Object.entries(data).sort((a, b) => {
+          return a[0].localeCompare(b[0]); // Ders koduna göre sırala
+        });
+
+        sirali.forEach(([kod, detay]) => {
+          const li = document.createElement("li");
+          const link = document.createElement("a");
+          link.href = `ders.html?kod=${kod}`;
+          link.innerText = `${kod} - ${detay.isim}`;
+          li.appendChild(link);
+          container.appendChild(li);
+        });
+      });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ders Belgeleri</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 id="dersBaslik">Ders Belgeleri</h1>
+  <div id="belgeler"></div>
+  <p><a href="dersler.html?bolum=Endüstri%20Mühendisliği&sinif=1">← Geri Dön</a></p>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const kod = urlParams.get("kod");
+
+    const baslik = document.getElementById("dersBaslik");
+    const belgelerDiv = document.getElementById("belgeler");
+
+    if (!kod) {
+      baslik.innerText = "HATA: Ders kodu eksik!";
+      belgelerDiv.innerText = "";
+    } else {
+      fetch("data/belgeler.json")
+        .then(res => res.json())
+        .then(data => {
+          const belgeler = data[kod.toUpperCase()] || [];
+          baslik.innerText = `Ders Belgeleri - ${kod.toUpperCase()}`;
+
+          belgelerDiv.innerHTML = "";
+          if (belgeler.length === 0) {
+            belgelerDiv.innerText = "Bu derse ait henüz belge eklenmedi.";
+          } else {
+            belgeler.forEach(belge => {
+              const a = document.createElement("a");
+              a.href = `assets/${belge.dosya}`;
+              a.target = "_blank";
+              a.textContent = belge.isim;
+              belgelerDiv.appendChild(a);
+              belgelerDiv.appendChild(document.createElement("br"));
+            });
+          }
+        })
+        .catch(err => {
+          baslik.innerText = "Belgeler yüklenirken hata oluştu.";
+          console.error(err);
+        });
+    }
+  </script>
+</body>
+</html>
